@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-    var URL = "https://api.instagram.com/v1/tags/%E5%8F%89%E5%AD%90/media/recent?client_id=5c4e60cc6de3451187b3d276d173ca62";
+    var URL = "https://api.instagram.com/v1/tags/walkinghomeco/media/recent?client_id=5c4e60cc6de3451187b3d276d173ca62";
     $.ajax({
         url: URL,
         dataType: "jsonp", // this is important
@@ -12,8 +12,7 @@ jQuery(document).ready(function ($) {
                 var instaTag = x.data[i].tags;
                 var instaTime = x.data[i].created_time;
                 var instaAnchor = x.data[i].link;
-                var instaHTML;
-                    instaHTML += "<div class='CaroselSlideItem'><img src='" + instaPicture + "'/><p>" + instaTag + "</p><p>Link:<a href='" + instaAnchor + "'>" + instaAnchor + "</a></p><p>Posted:" + instaTime + "</p></div>";
+                var instaHTML = instaHTML += "<div class='CaroselSlideItem'><img src='" + instaPicture + "'/><p>" + instaTag + "</p><p>Link:<a href='" + instaAnchor + "'>" + instaAnchor + "</a></p><p>Posted:" + instaTime + "</p></div>";
                 
                 // INSERT THE GALLERY
                 jQuery('#datas').html(instaHTML);

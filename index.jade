@@ -1,23 +1,13 @@
+include mixin/lorem
 doctype html
 html(lang="en")
 	head
-		title= pageTitle
-		script(type='text/javascript').
-			var youAreUsingJade = true
+		title Play With Instagram API
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
 		script(src='javascripts/loader.js')
 	body
-		h1 Jade - node template engine244
-		#container.col
-			if (youAreUsingJade = false)
-				p You are amazingsahffdr
-			else
-				p Get on it!sdedds
-			p.
-				Jade is a terse and simpledsdr
-				templating language with a
-				strong focus on performance
-				and powerful features.wow?
-		#datas.datas
-			p.
-				w
+		h1 Play With Instagram API
+		p
+			+lipsum(12, "paragraphs")
+		
+		#datas
