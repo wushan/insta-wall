@@ -1,13 +1,23 @@
 include mixin/lorem
 doctype html
-html(lang="en")
+html(lang="zh-TW")
 	head
+		meta(charset="utf-8")
+		meta(content="width=device-width, initial-scale=1.0", name="viewport")
 		title Play With Instagram API
-		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
-		script(src='javascripts/loader.js')
+		
+		link(href='css/all.css', type='text/css', rel='stylesheet')
+		
 	body
 		h1 Play With Instagram API
 		p
-			+lipsum(12, "paragraphs")
-		
+			+lipsum(2, "paragraphs")
+		p.
+			開心中文
+		.photo-grid-wrapper
+			.photo-grid-inner
+				#photo-grid
+					.grid-sizer
 		#datas
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+		script(src='javascripts/min/app-min.js')

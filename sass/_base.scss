@@ -1,0 +1,32 @@
+body {
+	font-size: 100%;
+	line-height: 1.6;
+	font-family: $sans-serif;
+	color: $white;
+	background-color: $black;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "brandon-grotesque", $sans-serif;
+	font-weight: 900;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+img {
+	display: block;
+	// max-width: 100%;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.clr {
+	&:before, &:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
